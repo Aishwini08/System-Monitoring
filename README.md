@@ -13,18 +13,6 @@ A lightweight system monitoring tool built to keep track of server health, runni
 - 🔔 Push notifications via email when an issue is detected  
 
 ---
-
-## 🛠️ Installation
-
-1. **Clone the repository:**
-      git clone git@github.com:Aishwini08/System-Monitoring.git
-      cd System-Monitoring
-
-2. Configure the monitoring script:
-     Update the script with services or ports you want to monitor
-     Set up email credentials for alert notifications
-
----
 ## 🧰 Tech Stack
 
   Language: Bash
