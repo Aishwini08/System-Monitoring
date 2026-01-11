@@ -16,8 +16,8 @@ APP_PASSWORD="YOUR-APP-PASSWORD"
 # =========================
 # Process & Port Monitoring
 # =========================
-PROCESS_NAME="nginx"   # Change process name if needed
-PORT=80                # Change port if needed
+PROCESS_NAME="nginx"  
+PORT=80               
 
 echo "CPU, RAM, Storage, Process and Port Monitoring"
 echo "Current Date and Time: $(date)"
