@@ -10,14 +10,14 @@ STORAGE_THRESHOLD=80
 # =========================
 # Email Configuration
 # =========================
-EMAIL_ID="YOUR-EMAIL-ID"
-APP_PASSWORD="YOUR-APP-PASSWORD"
+EMAIL_ID="your_email@gmail.com"
+APP_PASSWORD="your_password"
 
 # =========================
 # Process & Port Monitoring
 # =========================
-PROCESS_NAME="nginx"  
-PORT=80               
+PROCESS_NAME="nginx"   # Change process name if needed
+PORT=80                # Change port if needed
 
 echo "CPU, RAM, Storage, Process and Port Monitoring"
 echo "Current Date and Time: $(date)"
@@ -29,7 +29,7 @@ send_email() {
     SUBJECT="$1"
     BODY="$2"
 
-    curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd \
+    curl -v --url 'smtps://smtp.gmail.com:465' --ssl-reqd \
       --mail-from "$EMAIL_ID" \
       --mail-rcpt "$EMAIL_ID" \
       --user "$EMAIL_ID:$APP_PASSWORD" \
@@ -95,4 +95,3 @@ fi
 
 
 echo "Monitoring completed successfully."
-
